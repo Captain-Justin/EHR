@@ -242,7 +242,7 @@ layui.config({
 	}
 	//判断是否处于锁屏状态(如果关闭以后则未关闭浏览器之前不再显示)
 	if(window.sessionStorage.getItem("lockcms") != "true" && window.sessionStorage.getItem("showNotice") != "true"){
-		showNotice();
+		// showNotice();
 	}
 	$(".showNotice").on("click",function(){
 		showNotice();
@@ -359,10 +359,11 @@ function donation(){
 		tab : [{
 			title : "微信",
 			content : "<div style='padding:30px;overflow:hidden;background:#d2d0d0;'><img src='images/wechat.jpg'></div>"
-		},{
-			title : "支付宝",
-			content : "<div style='padding:30px;overflow:hidden;background:#d2d0d0;'><img src='images/alipay.jpg'></div>"
-		}]
+		}//,{
+		//	title : "支付宝",
+		//	content : "<div style='padding:30px;overflow:hidden;background:#d2d0d0;'><img src='images/alipay.jpg'></div>"
+		//}
+		]
 	})
 }
 
